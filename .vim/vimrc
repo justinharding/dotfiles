@@ -96,6 +96,11 @@ nmap <C-l> <C-W>l
 " Resize panes when window/terminal gets resize
 autocmd VimResized * :wincmd =
 
+" Switch ack so that default behaviour is not to jump to first entry
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space><Paste>
+
+
 " Search for the word under the cursor in the current directory
 nmap <M-k>    mo:Ack! "\b<cword>\b" <CR>
 nmap <Esc>k   mo:Ack! "\b<cword>\b" <CR>
