@@ -45,6 +45,7 @@ repos=(
   tomasr/molokai
   vim-scripts/wombat256.vim
 
+  rhysd/accelerated-jk
 )
 
 set -e
