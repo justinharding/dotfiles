@@ -286,7 +286,7 @@ let maplocalleader = ","
 set rtp+=/usr/local/opt/fzf
 set rtp+=~/.fzf
 " nmap ; :Buffers<CR>
-nmap <Leader>b :Buffers<CR>
+nmap <Leader>g :Buffers<CR>
 nmap <Leader>r :Tags<CR>
 nmap <Leader>t :Files<CR>
 nmap <Leader>a :Rg!<CR>

@@ -24,6 +24,7 @@ repos=(
   sheerun/vim-polyglot
   statico/vim-inform7
   tpope/vim-commentary
+  tpope/vim-dadbod
   tpope/vim-endwise
   tpope/vim-eunuch
   tpope/vim-fugitive
@@ -46,6 +47,7 @@ repos=(
   vim-scripts/wombat256.vim
 
   rhysd/accelerated-jk
+  ledger/vim-ledger
 )
 
 set -e
