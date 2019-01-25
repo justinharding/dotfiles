@@ -30,6 +30,9 @@ _color() {
 }
 
 # ENVIRONMENT VARIABLES {{{1
+DEFAULT_USER="justin"
+export ZSH=/Users/justin/.oh-my-zsh
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Yes, this defeats the point of the TERM variable, but everything pretty much
 # uses modern ANSI escape sequences. I've found that forcing everything to be
@@ -462,6 +465,11 @@ if [ -n "$INSIDE_EMACS" ]; then
   alias git='git --no-pager'
 fi
 
+# ledger time tracking
+export TIMELOG=/Users/justin/Dropbox/work/admin/work.timeclock
+function ti() { echo i `date '+%Y-%m-%d %H:%M:%S'` "$1  ${@:2}" >>$TIMELOG }
+function to() { echo o `date '+%Y-%m-%d %H:%M:%S'` >>$TIMELOG }
+
 # ZSH-SPECIFIC COMPLETION {{{1
 
 # ---------------------------------------------
@@ -711,6 +719,8 @@ elif [ -n "$SUDO_USER" ]; then
 else
   colorprompt
 fi
+
+source $ZSH/oh-my-zsh.sh
 
 # SSH {{{1
 
