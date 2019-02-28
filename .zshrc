@@ -420,7 +420,6 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # beyond compare
 #export TF_DIFF_COMMAND="bcomp %1 %2 -title1=%6 -title2=%7"
 
-
 # # fzf
 # export FZF_DEFAULT_COMMAND='ag --ignore *.pyc -g ""'
 # export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
