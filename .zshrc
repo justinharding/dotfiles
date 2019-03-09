@@ -481,11 +481,15 @@ nvm() {
   if [[ -d "$HOME/.nvm" ]]; then
     export NVM_DIR="$HOME/.nvm"
     # shellcheck disable=SC1090
-    source "${NVM_DIR}/nvm.sh"
-    if [[ -e ~/.nvm/alias/default ]]; then
-      PATH="${PATH}:${HOME}.nvm/versions/node/$(cat ~/.nvm/alias/default)/bin"
-    fi
-    # invoke the real nvm function now
+    [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+    [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
+
+    # source "${NVM_DIR}/nvm.sh"
+    # if [[ -e ~/.nvm/alias/default ]]; then
+    #   PATH="${PATH}:${HOME}.nvm/versions/node/$(cat ~/.nvm/alias/default)/bin"
+    # fi
+    # # invoke the real nvm function now
     nvm "$@"
   else
     echo "nvm is not installed" >&2
