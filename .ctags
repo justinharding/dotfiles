@@ -4,3 +4,9 @@
 --regex-CoffeeScript=/^[ \t]*@?([A-Za-z.]+):.*[-=]>.*$/\1/f,function/
 --regex-CoffeeScript=/^[ \t]*([A-Za-z.]+)[ \t]+=.*[-=]>.*$/\1/f,function/
 --regex-CoffeeScript=/^[ \t]*([A-Za-z.]+)[ \t]+=[^-=>\n]*$/\1/v,variable/
+
+--langdef=Go
+--langmap=Go:.go
+--regex-Go=/func([ \t]+\([^)]+\))?[ \t]+([a-zA-Z0-9_]+)/\2/f,func/
+--regex-Go=/var[ \t]+([a-zA-Z_][a-zA-Z0-9_]+)/\1/v,var/
+--regex-Go=/type[ \t]+([a-zA-Z_][a-zA-Z0-9_]+)/\1/t,type/
