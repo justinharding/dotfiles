@@ -305,6 +305,7 @@ fi
 
 alias cordova='nocorrect cordova'
 
+
 # FUNCTIONS {{{1
 
 # ack is really useful. I usually look for code and then edit all of the files
@@ -417,6 +418,7 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+ZSH_AUTOSUGGEST_USE_ASYNC=true
 test -e "/usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh" && source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # android sdk
