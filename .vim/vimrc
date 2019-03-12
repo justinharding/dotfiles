@@ -291,6 +291,10 @@ nmap <Leader>r :Tags<CR>
 nmap <Leader>t :Files<CR>
 nmap <Leader>a :Rg!<CR>
 nmap <Leader>c :Colors<CR>
+
+map <Leader>y "+y
+map <Leader>p "+p
+
 let $FZF_DEFAULT_COMMAND = 'rg --files --follow -g "!{.git,node_modules}/*" 2>/dev/null'
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
