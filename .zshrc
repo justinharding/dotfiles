@@ -399,7 +399,7 @@ screen-title() {
 
 # alias tf="~/TEE-CLC-14.114.0/tf"
 
-export PATH="/Users/justin/.bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+# export PATH="/Users/justin/.bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 
 # added the following line to support gnucash python
 export PYTHONPATH=$PYTHONPATH:/opt/local/lib/python2.7/site-packages
