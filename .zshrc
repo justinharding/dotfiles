@@ -558,9 +558,6 @@ export PATH="/usr/local/sbin:$PATH"
 
 # ledger time tracking
 export TIMELOG=/Users/justin/Dropbox/work/admin/work.timeclock
-function ti() { echo i `date '+%Y-%m-%d %H:%M:%S'` "$1  ${@:2}" >>$TIMELOG }
-function to() { echo o `date '+%Y-%m-%d %H:%M:%S'` >>$TIMELOG }
-
-# alias ti="echo i `date '+%Y-%m-%d %H:%M:%S'` \$* >>$TIMELOG"
-# alias to="echo o `date '+%Y-%m-%d %H:%M:%S'` >>$TIMELOG"
+alias ti='t in'
+alias to='t out'
 
