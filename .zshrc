@@ -632,6 +632,4 @@ export PATH="/usr/local/sbin:$PATH"
 
 # ledger time tracking
 export TIMELOG=/Users/justin/Dropbox/work/admin/work.timeclock
-alias ti='t in'
-alias to='t out'
 
