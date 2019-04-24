@@ -616,7 +616,8 @@ nvm() {
 # }
 # add-zsh-hook chpwd load-nvmrc
 
-
+# initialise pyenv for switching between python versions
+eval "$(pyenv init -)"
 
 # to run local python packages
 export PATH=$PATH:/Users/justin/Library/Python/2.7/bin
