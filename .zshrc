@@ -634,3 +634,9 @@ export PATH="/usr/local/sbin:$PATH"
 # ledger time tracking
 export TIMELOG=/Users/justin/Dropbox/work/admin/work.timeclock
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/justin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/justin/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/justin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/justin/google-cloud-sdk/completion.zsh.inc'; fi
