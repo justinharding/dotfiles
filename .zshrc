@@ -625,6 +625,9 @@ export PATH=$PATH:/Users/justin/Library/Python/2.7/bin
 # if we wanted python3 packages we would enable this line instead/aw well
 # export PATH=$PATH:/Users/justin/Library/Python/3.6/bin
 
+# support pipenv - local python environments
+export PATH=$PATH:/Users/justin/.local/bin
+
 # google search from terminal
 function google() { open /Applications/Safari.app/ "http://www.google.com/search?q= $1"; }
 
