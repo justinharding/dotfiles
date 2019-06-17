@@ -344,8 +344,8 @@ done
 
 # Make sure vim/vi always gets us an editor.
 if _has vim; then
-  alias vi=vim
-  vs() { vim +"NERDTree $1" }
+  alias vi=nvim
+  vs() { nvim +"NERDTree $1" }
   gvs() { gvim +"NERDTree $1" }
 else
   alias vim=vi
@@ -368,7 +368,7 @@ elif _has ack; then
 fi
 
 # Nico is amazing for showing me this.
-alias v='vim -R -'
+alias v='nvim -R -'
 for i in /usr/share/vim/vim*/macros/less.sh(N) ; do
   alias v="$i"
 done
@@ -386,15 +386,15 @@ alias cordova='nocorrect cordova'
 # containing that code. Changing `ack' to `vack' does this for me.
 if _has rg; then
   vack() {
-    vim `rg --color=never -l $@`
+    nvim `rg --color=never -l $@`
   }
 elif _has ag; then
   vack() {
-    vim `ag --nocolor -l $@`
+    nvim `ag --nocolor -l $@`
   }
 else
   vack() {
-    vim `ack -l $@`
+    nvim `ack -l $@`
   }
 fi
 alias vag=vack
@@ -402,7 +402,7 @@ alias vrg=vack
 
 # ..same thing with gg.
 vgg() {
-  vim `gg -l $@`
+  nvim `gg -l $@`
 }
 
 # Quick commands to sync CWD between terminals.
