@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+java -jar ~/dev/ledger/banks2ledger/target/uberjar/banks2ledger-1.2.2-standalone.jar $@
