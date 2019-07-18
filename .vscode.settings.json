@@ -1,7 +1,6 @@
 {
-  "editor.fontFamily": "Iosevka",
+  "editor.fontFamily": "monaco",
   "editor.fontLigatures": true,
-  "editor.fontSize": 16,
   "workbench.iconTheme": "material-icon-theme",
   "editor.quickSuggestions": {
     "other": true,
@@ -19,7 +18,7 @@
   "editor.tabSize": 2,
   "window.zoomLevel": 0,
   "files.useExperimentalFileWatcher": true,
-  "editor.lineNumbers": "off",
+  "editor.lineNumbers": "relative",
   "editor.cursorBlinking": "solid",
   "editor.glyphMargin": false,
   "vim.leader": ",",
@@ -62,5 +61,7 @@
   "php.suggest.basic": false,
   "workbench.colorTheme": "Default High Contrast",
   "git.confirmSync": false,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "C_Cpp.updateChannel": "Insiders",
+  "javascript.validate.enable": false
 }
