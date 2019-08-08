@@ -255,6 +255,9 @@ _force_prepend_to_path /usr/local/bin
 _force_prepend_to_path ~/bin
 # _force_prepend_to_path /usr/local/heroku/bin
 
+# the next line causes us to use gnu utils instead of the apple bsd versions
+_prepend_to_path /usr/local/opt/coreutils/libexec/gnubin
+
 _append_to_path /usr/sbin
 
 # Add our docs, too
