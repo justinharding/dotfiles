@@ -388,6 +388,12 @@ augroup VimDiff
   autocmd VimEnter,FilterWritePre * if &diff | ALEDisable | endif
 augroup END
 
+let g:ale_fixers = {
+\    'javascript': [
+\        'eslint'
+\    ],
+\}
+
 " Lightline
 let g:lightline = {
 \ 'colorscheme': 'wombat',
