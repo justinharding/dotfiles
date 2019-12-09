@@ -227,6 +227,10 @@ if _color; then
   export CLICOLOR=1
 fi
 
+# rg or repgrep
+# use config file in current directory
+export RIPGREP_CONFIG_PATH=./.ripgreprc
+
 # PATH MODIFICATIONS {{{1
 
 # Functions which modify the path given a directory, but only if the directory
