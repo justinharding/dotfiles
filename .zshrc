@@ -1,6 +1,13 @@
 # vim:ft=zsh:ts=2:sw=2:sts:et:
 
 # OH-MY-ZSH {{{1
+# added following line to stop error 
+# [oh-my-zsh] Insecure completion-dependent directories detected:
+# /usr/local/share
+# For safety, we will not load completions from these directories until
+# you fix their permissions and ownership and restart zsh.
+# See the above list for directories with group or other writability.
+ZSH_DISABLE_COMPFIX=true
 
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
