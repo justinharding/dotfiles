@@ -45,6 +45,8 @@ repos=(
 
   rhysd/accelerated-jk
   ledger/vim-ledger
+
+  pangloss/vim-javascript
 )
 
 set -e
