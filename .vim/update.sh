@@ -15,7 +15,6 @@ repos=(
   itchyny/lightline.vim
   jparise/vim-graphql
   junegunn/fzf.vim
-  junegunn/goyo.vim
   mileszs/ack.vim
   qpkorr/vim-bufkill
   scrooloose/nerdtree
@@ -47,6 +46,14 @@ repos=(
   ledger/vim-ledger
 
   pangloss/vim-javascript
+  fatih/vim-go.git
+
+  junegunn/goyo.vim
+  junegunn/limelight.vim
+
+  godlygeek/tabular
+  elzr/vim-json
+  plasticboy/vim-markdown
 )
 
 set -e
