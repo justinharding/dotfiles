@@ -15,6 +15,7 @@ repos=(
   itchyny/lightline.vim
   jparise/vim-graphql
   junegunn/fzf.vim
+  junegunn/vim-peekaboo
   mileszs/ack.vim
   qpkorr/vim-bufkill
   scrooloose/nerdtree
