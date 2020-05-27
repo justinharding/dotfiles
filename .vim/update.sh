@@ -55,6 +55,8 @@ repos=(
   godlygeek/tabular
   elzr/vim-json
   plasticboy/vim-markdown
+
+  jlanzarotta/bufexplorer
 )
 
 set -e
