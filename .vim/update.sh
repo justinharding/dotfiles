@@ -46,6 +46,8 @@ repos=(
   rhysd/accelerated-jk
   ledger/vim-ledger
 
+  easymotion/vim-easymotion
+
   pangloss/vim-javascript
   fatih/vim-go.git
 
@@ -57,6 +59,8 @@ repos=(
   plasticboy/vim-markdown
 
   jlanzarotta/bufexplorer
+
+  ericcurtin/CurtineIncSw.vim
 )
 
 set -e

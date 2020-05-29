@@ -51,7 +51,8 @@ nmap k gk
 nnoremap ' `
 
 " You don't know what you're missing if you don't use this.
-nmap <C-e> :e#<CR>
+" nmap <C-e> :e#<CR>
+nmap <Leader>e :e#<CR>
 
 " Move between open buffers.
 nmap <C-n> :bnext<CR>
@@ -98,15 +99,17 @@ autocmd VimResized * :wincmd =
 
 " Switch ack so that default behaviour is not to jump to first entry
 cnoreabbrev Ack Ack!
-nnoremap <Leader>a :Ack!<Space><Paste>
+nnoremap <Leader>b :Ack!<Space><Paste>
 
 
+" jh - not sure why, but I can't get these mappings to work at all
+" the text strings all seem to get interpreted as commands
 " Search for the word under the cursor in the current directory
-nmap <M-k>    mo:Ack! "\b<cword>\b" <CR>
-nmap <Esc>k   mo:Ack! "\b<cword>\b" <CR>
-nmap ˚        mo:Ack! "\b<cword>\b" <CR>
-nmap <M-S-k>  mo:Ggrep! "\b<cword>\b" <CR>
-nmap <Esc>K   mo:Ggrep! "\b<cword>\b" <CR>
+" nmap <M-k>    mo:Ack! "\b<cword>\b" <CR>
+" nmap <Esc>k   mo:Ack! "\b<cword>\b" <CR>
+" nmap ˚        mo:Ack! "\b<cword>\b" <CR>
+" nmap <M-S-k>  mo:Ggrep! "\b<cword>\b" <CR>
+" nmap <Esc>K   mo:Ggrep! "\b<cword>\b" <CR>
 
 " Alt-W to delete a buffer and remove it from the list but keep the window via bufkill.vim
 nmap <Esc>w :BD<CR>
@@ -341,6 +344,11 @@ augroup END
 " Ctrl-C has a long delay in SQL files - https://unix.stackexchange.com/a/150769
 let g:ftplugin_sql_omni_key = '<Leader>s'
 
+" switch between header and source
+cnoreabbrev a call CurtineIncSw()<CR>
+cnoreabbrev A call CurtineIncSw()<CR>
+map <c-a> :call CurtineIncSw()<CR>
+
 " More space with NERDTree
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeMarkBookmarks = 0
@@ -525,7 +533,7 @@ let g:tex_conceal = ""
 let g:vim_markdown_math = 1
 
 " support front matter of various formats
-let g:vim_markdown_frontmatter = 1 ' for YAML format
+let g:vim_markdown_frontmatter = 1 " for YAML format
 let g:vim_markdown_toml_frontmatter = 1 " for TOML format
 let g:vim_markdown_json_frontmatter = 1 " for JSON format
 
@@ -542,10 +550,12 @@ augroup END
 augroup vimrc
 autocmd!
 
+" au BufNewFile,BufRead *.cpp   set ft=cpp
 au BufNewFile,BufRead *.cson    set ft=coffee
 au BufNewFile,BufRead *.d.ts    ALEDisableBuffer
 au BufNewFile,BufRead *.glsl    setf glsl
 au BufNewFile,BufRead *.gyp     set ft=python
+" au BufNewFile,BufRead *.h     set ft=cpp
 au BufNewFile,BufRead *.html    setlocal nocindent smartindent
 au BufNewFile,BufRead *.i7x     setf inform7
 au BufNewFile,BufRead *.ini     setf conf
@@ -577,6 +587,7 @@ au BufNewFile,BufRead COMMIT_EDITMSG setlocal nolist nonumber
 au BufNewFile,BufRead Makefile setlocal nolist
 au BufNewFile,BufRead dist/* set ft=text
 
+au FileType cpp setlocal commentstring=//%s
 au FileType gitcommit setlocal nolist ts=4 sts=4 sw=4 noet
 au FileType inform7 setlocal nolist tw=0 ts=4 sw=4 noet foldlevel=999
 au FileType json setlocal conceallevel=0 foldmethod=syntax foldlevel=999
