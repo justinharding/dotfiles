@@ -5,36 +5,73 @@
 # Specify [pattern] to update only repos that match the pattern.
 
 repos=(
-
+  # git
   airblade/vim-gitgutter
-  alampros/vim-styled-jsx
-  ap/vim-css-color
+  tpope/vim-fugitive
+
+  # lots of languages including c++,, go haskell, javascript etc
+  sheerun/vim-polyglot
+  tpope/vim-commentary
+  w0rp/ale
+
+  # run unit tests
+  tpope/vim-dispatch
+  janko/vim-test
+
+  # c++ swap between header and source
+  ericcurtin/CurtineIncSw.vim
+
+  # add endif etc depending on language
+  tpope/vim-endwise
+
+  # javascript/json
+  # alampros/vim-styled-jsx
+  # ap/vim-css-color
+  # jparise/vim-graphql
+  # pangloss/vim-javascript
+  # elzr/vim-json
+
+  # go
+  # fatih/vim-go.git
+
+  # html/xml
   docunext/closetag.vim
+
+  # markdown
+  # plasticboy/vim-markdown
+
+  #ledger
+  # ledger/vim-ledger
+
+  # vim
   ervandew/supertab
   haya14busa/incsearch.vim
-  itchyny/lightline.vim
-  jparise/vim-graphql
-  junegunn/fzf.vim
-  junegunn/vim-peekaboo
-  mileszs/ack.vim
-  qpkorr/vim-bufkill
   scrooloose/nerdtree
-  sheerun/vim-polyglot
-  statico/vim-inform7
-  tpope/vim-commentary
-  tpope/vim-dadbod
-  tpope/vim-endwise
-  tpope/vim-eunuch
-  tpope/vim-fugitive
+  # manage runtime path for plugins
   tpope/vim-pathogen
+  # improve "." repeat
   tpope/vim-repeat
-  tpope/vim-rhubarb
+  # heuristically set buffer options - shiftwidth etc
   tpope/vim-sleuth
+  # show vim registers
+  junegunn/vim-peekaboo
   tpope/vim-surround
+  # [q ]q etc
   tpope/vim-unimpaired
-  w0rp/ale
+  # extra text target types in vim
   wellle/targets.vim
+  rhysd/accelerated-jk
+  easymotion/vim-easymotion
 
+  # search
+  junegunn/fzf.vim
+  mileszs/ack.vim
+
+  # status line
+  itchyny/lightline.vim
+  jlanzarotta/bufexplorer
+
+  # colours
   altercation/vim-colors-solarized
   arcticicestudio/nord-vim
   nanotech/jellybeans.vim
@@ -43,24 +80,11 @@ repos=(
   tomasr/molokai
   vim-scripts/wombat256.vim
 
-  rhysd/accelerated-jk
-  ledger/vim-ledger
-
-  easymotion/vim-easymotion
-
-  pangloss/vim-javascript
-  fatih/vim-go.git
-
-  junegunn/goyo.vim
-  junegunn/limelight.vim
-
+  # text alignment
   godlygeek/tabular
-  elzr/vim-json
-  plasticboy/vim-markdown
 
-  jlanzarotta/bufexplorer
-
-  ericcurtin/CurtineIncSw.vim
+  # interact with database like postgres
+  # tpope/vim-dadbod
 )
 
 set -e

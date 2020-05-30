@@ -101,6 +101,15 @@ autocmd VimResized * :wincmd =
 cnoreabbrev Ack Ack!
 nnoremap <Leader>b :Ack!<Space><Paste>
 
+" test runner mappings
+nmap <silent> t<C-n> :TestNearest<CR>
+nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuite<CR>
+nmap <silent> t<C-l> :TestLast<CR>
+nmap <silent> t<C-g> :TestVisit<CR>
+
+" this makes test runner output to quickfix buffer
+let test#strategy = "dispatch"
 
 " jh - not sure why, but I can't get these mappings to work at all
 " the text strings all seem to get interpreted as commands
@@ -396,6 +405,14 @@ augroup VimDiff
   autocmd VimEnter,FilterWritePre * if &diff | ALEDisable | endif
 augroup END
 
+let g:ale_linters = {
+    \ 'python': ['pylint'],
+    \ 'vim': ['vint'],
+    \ 'cpp': ['clang'],
+    \ 'c': ['clang'],
+    \ 'go': ['gofmt', 'golint', 'go vet', 'gopls']
+\}
+
 let g:ale_fixers = {
 \    'javascript': [
 \        'eslint'
@@ -405,6 +422,10 @@ let g:ale_fixers = {
 \        'remove_trailing_lines',
 \        'trim_whitespace'
 \    ],
+\    'go': [
+\       'gofmt',
+\       'goimports'
+\   ]
 \}
 
 " Lightline
