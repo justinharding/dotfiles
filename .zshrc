@@ -39,6 +39,8 @@ ZSH_THEME="robbyrussell"
 # autoload -U promptinit; promptinit
 # prompt pure
 
+eval "$(starship init zsh)"
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -196,7 +198,9 @@ else
 fi
 
 # EDITOR
-if _has vim; then
+if _has nvr; then
+  export EDITOR=nvr VISUAL=nvr
+elif _has vim; then
   export EDITOR=vim VISUAL=vim
 elif _has vi; then
   export EDITOR=vi VISUAL=vi
@@ -656,3 +660,5 @@ if [ -f '/Users/justin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/justin/g
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/justin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/justin/google-cloud-sdk/completion.zsh.inc'; fi
+
+# export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"

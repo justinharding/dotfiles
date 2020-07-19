@@ -101,6 +101,9 @@ autocmd VimResized * :wincmd =
 cnoreabbrev Ack Ack!
 nnoremap <Leader>b :Ack!<Space><Paste>
 
+" make it easier to exit from insert mode in terminal
+tnoremap <C-[> <C-\><C-n>
+
 " test runner mappings
 nmap <silent> t<C-n> :TestNearest<CR>
 nmap <silent> t<C-f> :TestFile<CR>
@@ -356,7 +359,8 @@ let g:ftplugin_sql_omni_key = '<Leader>s'
 " switch between header and source
 cnoreabbrev a call CurtineIncSw()<CR>
 cnoreabbrev A call CurtineIncSw()<CR>
-map <c-a> :call CurtineIncSw()<CR>
+" map <c-a> :call CurtineIncSw()<CR>
+nmap <Leader>s :call CurtineIncSw()<CR>
 
 " More space with NERDTree
 let g:NERDTreeMinimalUI = 1

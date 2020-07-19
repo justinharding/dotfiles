@@ -32,7 +32,7 @@ repos=(
   # elzr/vim-json
 
   # go
-  # fatih/vim-go.git
+  fatih/vim-go.git
 
   # html/xml
   docunext/closetag.vim
