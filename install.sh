@@ -69,6 +69,8 @@ mkdir -p "$vscodepath"
 symlink "$basedir/.vscode.settings.json" "$vscodepath/settings.json"
 symlink "$basedir/.vscode.keybindings.json" "$vscodepath/keybindings.json"
 
+symlink "$basedir/.config/starship.toml" "$HOME/.config/starship.toml"
+
 echo "Adding executables to ~/bin/..."
 mkdir -p "$bindir"
 for path in bin/* ; do
