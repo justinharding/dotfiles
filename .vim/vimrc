@@ -228,6 +228,7 @@ set formatoptions=tcqn1     " t - autowrap normal text
                             " n - autowrap lists
                             " 1 - break _before_ single-letter words
                             " 2 - use indenting from 2nd line of para
+set clipboard^=unnamed,unnamedplus " use system clipboard
 set hidden                  " Don't prompt to save hidden windows until exit
 set history=200             " How many lines of history to save
 set hlsearch                " Hilight searching
