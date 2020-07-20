@@ -132,7 +132,7 @@ nmap ∑      :BD<CR>
 nmap <Leader>z z=1<CR><CR>
 
 " Fugitive Conflict Resolution
-nnoremap <leader>gd :Gvdiff<CR>
+nnoremap <leader>gd :Gdiffsplit<CR>
 nnoremap gdh :diffget //2<CR>
 nnoremap gdl :diffget //3<CR>
 
