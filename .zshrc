@@ -653,7 +653,7 @@ function google() { open /Applications/Safari.app/ "http://www.google.com/search
 export PATH="/usr/local/sbin:$PATH"
 
 # ledger time tracking
-export TIMELOG=/Users/justin/Documents/work/admin/work.timeclock
+export TIMELOG=~/docs/work/admin/work.timeclock
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/justin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/justin/google-cloud-sdk/path.zsh.inc'; fi
