@@ -629,6 +629,10 @@ au Filetype gitcommit setlocal tw=80
 
 augroup END
 
+if has('nvim')
+  let $GIT_EDITOR = 'nvr -cc split --remote-wait'
+endif
+
 " ----------------------------------------------------------------------------
 " HOST-SPECIFIC VIM FILE
 " ----------------------------------------------------------------------------
