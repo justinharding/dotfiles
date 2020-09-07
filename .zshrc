@@ -396,7 +396,7 @@ if _is Darwin; then
 fi
 
 alias cordova='nocorrect cordova'
-
+alias typora="open -a typora"
 
 # FUNCTIONS {{{1
 
