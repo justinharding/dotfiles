@@ -395,7 +395,6 @@ if _is Darwin; then
   alias strace='sudo dtruss -f sudo -u $USER'
 fi
 
-alias cordova='nocorrect cordova'
 alias typora="open -a typora"
 
 # FUNCTIONS {{{1
