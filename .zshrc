@@ -302,6 +302,7 @@ alias d='docker'
 alias dc='docker-compose'
 alias df='df -H'
 alias dls='dpkg -L'
+alias dotcfg='/usr/local/bin/git --git-dir=$HOME/.dotcfg/ --work-tree=$HOME'
 alias dotenv="eval \$(egrep -v '^#' .env | xargs)"
 alias dsl='dpkg -l | grep -i'
 alias e='emacs'
