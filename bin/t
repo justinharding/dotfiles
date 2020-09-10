@@ -41,7 +41,7 @@ _t_cur() {
 
 # Show the last checked out project
 _t_last() {
-  sed -ne '/^o/{g;p;};h;' "${timelog}" | tail -n 1 | __t_extract_project
+  sed -ne '/^o/{g;p;};h;' "${timelog}" | tail -n $1 | head -n 1 | __t_extract_project
 }
 
 # Show usage
@@ -54,12 +54,18 @@ actions:
      out - clock out of project
      sw,switch - switch projects
      bal - show balance
-     hours - show balance for today
+     hours,td - show balance for today
+     yd,yesterday - show balance for yesterday
+     tw,thisweek - show balance for this week
+     lw,lastweek - show balance for last week
      edit - edit timelog file
      cur - show currently open project
      last - show last closed project
+     last^ to last^^^^^ - show nth last closed project
      grep - grep timelog for argument
      cat - show timelog
+     head - show start of timelog
+     tail - show end of timelog
      less - show timelog in pager
      timelog - show timelog file
 EOF
@@ -70,12 +76,7 @@ EOF
 #
 
 __t_extract_project() {
-  awk '$1 != "o" {
-          line = $4
-          for (i=5; i<=NF; i++)
-            line = line " " $i;
-          print line
-      }'
+  sed -e 's/\([^ \t]* \)\{3\}//'
 }
 
 action=$1; shift
@@ -87,12 +88,26 @@ case "${action}" in
   sw)   _t_sw "$@";;
   bal) _t_ledger bal "$@";;
   hours) _t_ledger bal -p "since today" "$@";;
+  td) _t_ledger bal -p "since today" "$@";;
+  yesterday) _t_ledger bal -p "yesterday" "$@";;
+  yd) _t_ledger bal -p "yesterday" "$@";;
+  thisweek) _t_ledger bal -p "this week" "$@";;
+  tw) _t_ledger bal -p "this week" "$@";;
+  lastweek) _t_ledger bal -p "last week" "$@";;
+  lw) _t_ledger bal -p "last week" "$@";;
   switch)   _t_sw "$@";;
   edit) _t_do $EDITOR "$@";;
   cur)  _t_cur "$@";;
-  last) _t_last "$@";;
+  last^^^^^) _t_last 6 "$@";;
+  last^^^^) _t_last 5 "$@";;
+  last^^^) _t_last 4 "$@";;
+  last^^) _t_last 3 "$@";;
+  last^) _t_last 2 "$@";;
+  last) _t_last 1 "$@";;
   grep) _t_do grep "$@";;
   cat)  _t_do cat "$@";;
+  head)  _t_do head "$@";;
+  tail)  _t_do tail "$@";;
   less)  _t_do less;;
   timelog) _t_timelog "$@";;
 
