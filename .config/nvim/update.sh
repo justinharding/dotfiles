@@ -88,7 +88,7 @@ repos=(
 )
 
 set -e
-dir=~/.vim/bundle
+dir=~/.config/nvim/bundle
 
 if [ -d "$dir" -a -z "$1" ]; then
   temp="$(mktemp -d -t bundleXXXXX)"
