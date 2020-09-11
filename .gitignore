@@ -13,3 +13,7 @@
 .vim/bundle/*/doc/tags-??
 .vimlocal
 .dotcfg
+.Trash
+.cache
+.config
+
