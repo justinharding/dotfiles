@@ -121,3 +121,15 @@ our*.key
 .vnc/
 .vscode/
 
+.config/.mono/
+.config/Microsoft\\VisualStudio\ Services/
+.config/NuGet/
+.config/configstore/
+.config/flake8
+.config/gcloud/
+.config/git/
+.config/htop/
+.config/qBittorrent/
+.config/stetic/
+.config/wireshark/
+.config/xbuild/
