@@ -19,7 +19,6 @@
 .dotcfg
 .Trash
 .cache
-.config
 
 .gnupg/
 .gnupg_pre_2.1/
