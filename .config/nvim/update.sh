@@ -66,6 +66,8 @@ repos=(
   # search
   junegunn/fzf.vim
   mileszs/ack.vim
+  # search for next 2 char match (e.g. sab)
+  justinmk/vim-sneak
 
   # status line
   itchyny/lightline.vim
