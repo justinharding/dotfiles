@@ -8,9 +8,6 @@
 	excludesfile = ~/.gitignore
 [gist]
 	private = yes
-[branch "master"]
-	remote = origin
-	merge = refs/heads/master
 [log]
 	decorate = short
 [push]
