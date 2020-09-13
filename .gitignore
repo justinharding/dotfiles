@@ -121,6 +121,10 @@ our*.key
 .vnc/
 .vscode/
 
+.z
+.z.*
+.zcompdump*
+
 .config/.mono/
 .config/Microsoft\\VisualStudio\ Services/
 .config/NuGet/
