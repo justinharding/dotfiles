@@ -32,6 +32,7 @@
     r = reset
     cp = cherry-pick
     gr = grep -Ii
+	p = push
     # }}}
     # tweak defaults {{{
     diff = diff --word-diff
