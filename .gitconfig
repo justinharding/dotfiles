@@ -27,6 +27,7 @@
     cl = clone
     ci = commit
     co = checkout
+    com = checkout master
     br = branch
     r = reset
     cp = cherry-pick
@@ -75,9 +76,9 @@
     rh2 = reset HEAD^^ --hard
     # }}}
     # stash {{{
-    sl = stash list
+    sls = stash list
     sa = stash apply
-    ss = stash save
+    sp = stash push
     # }}}
     # assume aliases {{{
     assume = update-index --assume-unchanged
