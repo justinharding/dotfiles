@@ -654,6 +654,7 @@ export PATH="/usr/local/sbin:$PATH"
 
 # ledger time tracking
 export TIMELOG=~/docs/work/admin/work.timeclock
+export TIMELOG_STARTOFWEEK=mon
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/justin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/justin/google-cloud-sdk/path.zsh.inc'; fi
