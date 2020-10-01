@@ -33,6 +33,7 @@
     cp = cherry-pick
     gr = grep -Ii
 	p = push
+	a = add
     # }}}
     # tweak defaults {{{
     diff = diff --word-diff
@@ -80,6 +81,7 @@
     sls = stash list
     sa = stash apply
     sp = stash push
+    sc = stash clear
     # }}}
     # assume aliases {{{
     assume = update-index --assume-unchanged
