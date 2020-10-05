@@ -8,3 +8,19 @@ success_symbol = "➜"     # The "symbol" segment is being set to "➜"
 # Disable the package module, hiding it from the prompt completely
 [package]
 disabled = true
+
+[gcloud]
+# format = "[$symbol$account(\\($region\\))]($style) "
+format = "[$symbol$active]($style) "
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+symbol = "🌱"
+
+[golang]
+format = "[$symbol$version]($style) "
+symbol = "🐹"
+
+[helm]
+format = "[$symbol$version]($style) "
+symbol = "⎈"
