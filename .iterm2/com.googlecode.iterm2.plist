@@ -243,7 +243,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>2613 655 1018 447 1680 232 3200 1800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1920 274 2005 1669 1920 274 3008 1669 </string>
+	<string>0 0 1280 1417 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>2146 259 570 488 1680 91 3008 1692 </string>
 	<key>New Bookmarks</key>
@@ -785,7 +785,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 12</string>
+			<string>FiraCodeNerdFontComplete-Light 13</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1041,6 +1041,11 @@
 		<string>3.2.7</string>
 		<string>3.4.0beta4</string>
 	</array>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>FiraCode Nerd Font</string>
+		<string>Monaco</string>
+	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
 	<key>NoSyncFrame_SessionsPreferences</key>
@@ -1053,9 +1058,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {2560, 1440}}</string>
+		<string>{{0, 0}, {1920, 1200}}</string>
 		<key>topLeft</key>
-		<string>{407, 877}</string>
+		<string>{175, 828}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -1068,11 +1073,11 @@
 	<key>NoSyncInstallationId</key>
 	<string>8FEAA3D2-0398-447C-BCAC-CBBDAB91D941</string>
 	<key>NoSyncLastOSVersion</key>
-	<string>Version 10.15.6 (Build 19G2021)</string>
+	<string>Version 10.15.7 (Build 19H2)</string>
 	<key>NoSyncLastTipTime</key>
 	<real>619905659.82584298</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>14</integer>
+	<integer>16</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>611547738.31923795</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
