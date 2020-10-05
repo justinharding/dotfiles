@@ -17,6 +17,18 @@ format = "[$symbol$active]($style) "
 format = "[$symbol$branch]($style) "
 symbol = "🌱"
 
+[git_status]
+conflicted = "🏳"
+ahead = "🏎💨"
+behind = "😰"
+diverged = "😵"
+untracked = "🤷‍"
+stashed = "📦"
+modified = "📝"
+staged = '[++\($count\)](green)'
+renamed = "👅"
+deleted = "🗑"
+
 [golang]
 format = "[$symbol$version]($style) "
 symbol = "🐹"
