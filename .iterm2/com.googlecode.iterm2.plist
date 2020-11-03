@@ -243,7 +243,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>2613 655 1018 447 1680 232 3200 1800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1280 1417 0 0 2560 1417 </string>
+	<string>1920 179 1680 1867 1920 179 3360 1867 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>2146 259 570 488 1680 91 3008 1692 </string>
 	<key>New Bookmarks</key>
@@ -251,6 +251,8 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>ASCII Ligatures</key>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -785,7 +787,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraCodeNerdFontComplete-Light 13</string>
+			<string>Monaco 12</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1043,7 +1045,6 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>FiraCode Nerd Font</string>
 		<string>Monaco</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
