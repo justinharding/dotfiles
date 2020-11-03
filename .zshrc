@@ -398,6 +398,9 @@ fi
 
 alias typora="open -a typora"
 
+# some maths conversion utils
+alias dec2hex="printf '%x\n'"
+alias hex2dec="printf '%d\n'"
 # FUNCTIONS {{{1
 
 # ack is really useful. I usually look for code and then edit all of the files
