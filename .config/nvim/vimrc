@@ -417,8 +417,8 @@ augroup VimDiff
   autocmd VimEnter,FilterWritePre * if &diff | ALEDisable | endif
 augroup END
 
+    " \ 'python': ['pylint'],
 let g:ale_linters = {
-    \ 'python': ['pylint'],
     \ 'vim': ['vint'],
     \ 'cpp': ['clang'],
     \ 'c': ['clang'],
@@ -458,6 +458,7 @@ let g:lightline = {
 \   'linter_errors': 'error'
 \ },
 \ }
+
 function! LightlineLinterWarnings() abort
   let l:counts = ale#statusline#Count(bufnr(''))
   let l:all_errors = l:counts.error + l:counts.style_error
@@ -495,6 +496,9 @@ augroup _lightline
   autocmd User ALELint call s:MaybeUpdateLightline()
   autocmd ColorScheme * call s:UpdateLightlineColorScheme()
 augroup END
+
+" python linter
+let g:pymode_options_max_line_length=120
 
 " ----------------------------------------------------------------------------
 " COLORS
