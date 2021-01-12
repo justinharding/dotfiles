@@ -80,10 +80,10 @@
     # }}}
     # stash {{{
     sls = stash list
-    sa = stash apply
-    so = stash pop
-    sp = stash push
-    sc = stash clear
+    sap = stash apply
+    spo = stash pop
+    spu = stash push
+    scl = stash clear
     # }}}
     # assume aliases {{{
     assume = update-index --assume-unchanged
