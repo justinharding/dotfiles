@@ -491,6 +491,7 @@ screen-title() {
   echo -n "k$*\\"
 }
 
+# need to execute bw login <username> first, then follow instructions
 bwget() {
   bw list items --search "$1"| jq '.[] | .name, .login.uris, .login.username, .login.password'
 }
