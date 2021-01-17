@@ -491,6 +491,9 @@ screen-title() {
   echo -n "k$*\\"
 }
 
+bwget() {
+  bw list items --search "$1"| jq '.[] | .name, .login.uris, .login.username, .login.password'
+}
 
 # alias tf="~/TEE-CLC-14.114.0/tf"
 
