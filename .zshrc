@@ -495,6 +495,9 @@ screen-title() {
 bwget() {
   bw list items --search "$1"| jq '.[] | .name, .login.uris, .login.username, .login.password'
 }
+bwgetcard() {
+bw list items --search "$1"| jq '.[] | .name,.card.cardholderName,.card.number,.card.expMonth,.card.expYear,.card.code'
+}
 
 # alias tf="~/TEE-CLC-14.114.0/tf"
 
@@ -571,6 +574,11 @@ fi
 
 if _has rg; then
   export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git/*"'
+fi
+
+# bitwarden completions via Homebrew
+if [ -e /usr/local/bin/bw ]; then
+  eval "$(bw completion --shell zsh); compdef _bw bw;"
 fi
 
 # z utility for jumping around directories
